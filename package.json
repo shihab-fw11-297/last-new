@@ -1,0 +1,53 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --experimental-transform-types --test tests/*.test.mjs",
+    "verify:finage": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-finage.mjs",
+    "verify:psychology": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-psychology.mjs",
+    "bench:psychology": "node --experimental-transform-types scripts/benchmark-psychology.mjs",
+    "verify:structure": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-structure.mjs",
+    "bench:structure": "node --experimental-transform-types scripts/benchmark-structure.mjs",
+    "verify:liquidity": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-liquidity.mjs",
+    "bench:liquidity": "node --experimental-transform-types --expose-gc scripts/benchmark-liquidity.mjs",
+    "verify:approach": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-price-approach.mjs",
+    "bench:approach": "node --experimental-transform-types scripts/benchmark-price-approach.mjs",
+    "verify:interaction": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-liquidity-interaction.mjs",
+    "bench:interaction": "node --experimental-transform-types scripts/benchmark-liquidity-interaction.mjs",
+    "verify:control": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-control.mjs",
+    "verify:displacement": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-displacement.mjs",
+    "verify:structure-confirmation": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-structural-confirmation.mjs",
+    "verify:fvg": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-fvg.mjs",
+    "verify:entry-candidate": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-entry-candidate.mjs",
+    "verify:risk": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-risk-validation.mjs",
+    "verify:signal": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-signal-decision.mjs",
+    "verify:ledger": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-signal-ledger.mjs",
+    "verify:replay": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-replay.mjs",
+    "verify:backtest": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-backtest.mjs",
+    "verify:validation": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-validation.mjs",
+    "verify:date-range": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/verify-date-range.mjs",
+    "audit:master": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/audit-master.mjs",
+    "audit:finage-consistency": "node --experimental-transform-types --env-file-if-exists=.env --env-file-if-exists=.env.local scripts/compare-finage-plans.mjs"
+  },
+  "dependencies": {
+    "lightweight-charts": "^5.2.1",
+    "next": "16.3.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
