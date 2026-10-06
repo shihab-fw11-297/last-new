@@ -1,0 +1,7 @@
+{
+  "name": "TraderBrain · XAUUSD",
+  "description": "Causal XAUUSD market structure and liquidity analysis",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
